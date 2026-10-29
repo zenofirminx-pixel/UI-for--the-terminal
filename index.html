@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity IA - Une Révolution Signée Firmin Harker</title>
+    
+    <!-- Indexation & SEO Google (Meta-robots requis) -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Découvrez Infinity, l'intelligence artificielle souveraine développée en RDC par Firmin Harker. Interface ultra-rapide connectée via flux SSE.">
+    <meta name="keywords" content="Infinity, IA Congolaise, Firmin, Infinity APK, aurx vercel, AI Congo, SSE Streaming">
+
+    <!-- Frameworks UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #22c55e 50%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        /* Style pour l'effet de curseur clignotant pendant le streaming */
+        .streaming-text::after {
+            content: '▊';
+            animation: blink 1s steps(2, start) infinite;
+            color: #10b981;
+            margin-left: 2px;
+        }
+        @keyframes blink { to { visibility: hidden; } }
+    </style>
+</head>
+<body class="text-gray-100 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Barre de navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-blue-600 to-emerald-500 p-2.5 rounded-xl shadow-lg shadow-blue-500/20">
+                    <i class="fa-solid fa-infinity text-xl text-white"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Infinity<span class="text-emerald-400">.ai</span></span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="#biographie" class="hover:text-white transition-colors">Le Créateur</a>
+                <a href="#interface-live" class="hover:text-white transition-colors">Console de Chat Live</a>
+            </nav>
+            <div>
+                <a href="https://aurx.vercel.app/" target="_blank" class="bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-500 hover:to-emerald-400 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 shadow-lg shadow-blue-500/10 flex items-center gap-2">
+                    Tester l'App Externe <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- Section Présentation Héros -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-4">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <span class="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span> Intégration API SSE Backend
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+                    Système Synchrone conçu par <span class="gradient-text">Firmin Harker</span>
+                </h1>
+                <p class="text-gray-400 text-lg font-light leading-relaxed">
+                    Cette console intègre la gestion dynamique des <span class="text-white font-medium">ID de conversation</span> pour maintenir l’état de session auprès du point de terminaison de l'APK, tout en décodant en temps réel le flux événementiel pour éviter toute surcharge ou blocage du serveur.
+                </p>
+            </div>
+            <div class="lg:col-span-5">
+                <div class="glass-card p-6 rounded-2xl border border-gray-800 text-center space-y-4">
+                    <div class="text-emerald-400 text-3xl"><i class="fa-solid fa-server"></i></div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide">Endpoint de Production</h4>
+                        <p class="text-xs text-blue-400 font-mono mt-1 bg-slate-950 p-2 rounded-lg break-all">
+                            https://aur-x-backend.vercel.app/api/chat/
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Interface Fonctionnelle -->
+        <section id="interface-live" class="space-y-6 scroll-mt-24">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
+                    <span class="h-6 w-1 bg-emerald-500 rounded-full"></span> Console de Test d'Interface Professionnelle
+                </h2>
+                <p class="text-sm text-gray-400 mt-1">
+                    Configurez vos paramètres de session requis ci-dessous avant d'initier la passerelle d'émission.
+                </p>
+            </div>
+
+            <!-- Configuration Technique Initiale de l'UI -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto bg-gray-950/50 p-4 rounded-xl border border-gray-900">
+                <div class="space-y-1">
+                    <label class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">ID de Conversation (Requis)</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600 text-xs"><i class="fa-solid fa-key"></i></span>
+                        <input type="text" id="convIdInput" value="session_congolaise_2026" class="w-full bg-gray-900 border border-gray-800 focus:border-blue-500 rounded-lg pl-9 pr-3 py-1.5 text-xs text-white focus:outline-none font-mono">
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Protocole de réception</label>
+                    <div class="bg-gray-900 border border-gray-900 rounded-lg px-3 py-1.5 text-xs text-emerald-400 font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-stream"></i> Server-Sent Events (SSE Stream)
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <label class="text-[11px] font-bold text-gray-400 uppercase tracking-wider block">Statut du Flux</label>
+                    <div id="connectionStatus" class="bg-gray-900 border border-gray-900 rounded-lg px-3 py-1.5 text-xs text-gray-500 font-medium flex items-center gap-2">
+                        <i class="fa-solid fa-circle-notch"></i> En attente d'envoi...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fenêtre de Chat Principale -->
+            <div class="glass-card rounded-2xl border border-gray-800 shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 max-w-5xl mx-auto h-[500px]">
+                
+                <!-- Barre latérale -->
+                <div class="hidden md:flex md:col-span-3 bg-gray-950/80 p-4 border-r border-gray-900 flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-full bg-gray-900 border border-gray-800 text-gray-400 rounded-xl py-2 px-3 text-[11px] font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-microchip text-blue-400"></i> Engine: Core Infinity
+                        </div>
+                        <div class="space-y-2">
+                            <span class="text-[10px] font-bold text-gray-500 uppercase tracking-wider block">Métadonnées</span>
+                            <div class="text-[11px] text-gray-400 bg-gray-900/40 p-2 rounded-lg space-y-1 font-mono">
+                                <div>Developer: Jin-man</div>
+                                <div>Region: Kinshasa/RDC</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="clearChatLog()" class="text-left text-[11px] text-red-400 hover:text-red-300 transition-colors flex items-center gap-2">
+                        <i class="fa-regular fa-trash-can"></i> Effacer l'écran
+                    </button>
+                </div>
+
+                <!-- Zone d'affichage et de contrôle de la conversation -->
+                <div class="col-span-1 md:col-span-9 flex flex-col justify-between bg-gradient-to-b from-gray-900/40 to-transparent">
+                    
+                    <!-- En-tête UI de la boite de messagerie -->
+                    <div class="px-6 py-3 bg-gray-950/40 border-b border-gray-900/60 flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                            <span class="text-xs font-bold text-gray-200">Terminal Actif</span>
+                        </div>
+                        <span class="text-[10px] text-gray-500 font-mono">aur-x-backend.vercel.app</span>
+                    </div>
+
+                    <div id="chatDisplayContainer" class="p-6 overflow-y-auto flex-1 space-y-4 text-xs scrollbar-thin scrollbar-thumb-gray-800">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-gray-900 border border-gray-800 text-gray-300 p-3 rounded-2xl rounded-tl-none max-w-xl">
+                                <p class="font-semibold text-emerald-400 mb-1 flex items-center gap-1">
+                                    <i class="fa-solid fa-infinity text-[10px]"></i> Infinity Core
+                                </p>
+                                Configuration matérielle prête. Spécifiez votre <code class="bg-gray-950 px-1 py-0.5 rounded text-blue-400 font-mono">conversation_id</code> ci-dessus et soumettez votre invite pour instancier la lecture asynchrone SSE.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 border-t border-gray-900/60 bg-gray-950/20">
+                        <form id="sseChatForm" onsubmit="executeStreamingRequest(event)" class="bg-gray-900/60 border border-gray-800 rounded-xl p-2 flex items-center justify-between gap-2 focus-within:border-emerald-500/50 transition-all">
+                            <input type="text" id="userInputText" placeholder="Saisissez votre prompt pour le traitement asynchrone..." class="bg-transparent border-none text-xs text-gray-200 focus:outline-none flex-1 px-2 py-1" required>
+                            <button type="submit" id="submitBtnIcon" class="bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg transition-colors">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const targetBackendEndpoint = "https://aur-x-backend.vercel.app/api/chat/";
+
+        async function executeStreamingRequest(event) {
+            event.preventDefault();
+
+            const inputField = document.getElementById("userInputText");
+            const conversationIdField = document.getElementById("convIdInput");
+            const chatDisplayContainer = document.getElementById("chatDisplayContainer");
+            const statusLabel = document.getElementById("connectionStatus");
+            const submitBtn = document.getElementById("submitBtnIcon");
+
+            const promptMessage = inputField.value.trim();
+            const selectedConversationId = conversationIdField.value.trim();
+
+            if (!promptMessage) return;
+            if (!selectedConversationId) {
+                alert("Erreur structurelle : L'ID de conversation est obligatoire pour indexer la requête sur le serveur.");
+                return;
+            }
+
+            // Désactivation temporaire des contrôles de l'UI pendant l'acheminement
+            inputField.disabled = true;
+            submitBtn.disabled = true;
+            submitBtn.className = "bg-gray-800 text-gray-600 p-2 rounded-lg cursor-not-allowed";
+            
+            statusLabel.innerHTML = `<i class="fa-solid fa-spinner animate-spin text-blue-400"></i> Traitement de l'envoi...`;
+            statusLabel.className = "bg-gray-900 border border-gray-900 rounded-lg px-3 py-1.5 text-xs text-blue-400 font-medium flex items-center gap-2";
+
+            // Injection immédiate du message de l'utilisateur dans l'affichage local
+            const userMsgNode = document.createElement("div");
+            userMsgNode.className = "flex items-start gap-3 justify-end max-w-xl ml-auto";
+            userMsgNode.innerHTML = `
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 rounded-2xl rounded-tr-none shadow-md">
+                    ${promptMessage}
+                </div>`;
+            chatDisplayContainer.appendChild(userMsgNode);
+            chatDisplayContainer.scrollTop = chatDisplayContainer.scrollHeight;
+            inputField.value = "";
+
+            // Création de l'élément de bloc pour la réponse progressive (Streaming) de l'IA
+            const aiMsgNode = document.createElement("div");
+            aiMsgNode.className = "flex items-start gap-3";
+            
+            const aiBubbleStructure = document.createElement("div");
+            aiBubbleStructure.className = "bg-gray-900 border border-gray-800 text-gray-200 p-3 rounded-2xl rounded-tl-none max-w-xl shadow-md";
+            aiBubbleStructure.innerHTML = `
+                <p class="font-semibold text-emerald-400 mb-1 flex items-center gap-1">
+                    <i class="fa-solid fa-infinity text-[10px]"></i> Infinity Engine
+                </p>
+                <span class="response-content-target streaming-text text-gray-300 leading-relaxed"></span>`;
+            
+            aiMsgNode.appendChild(aiBubbleStructure);
+            chatDisplayContainer.appendChild(aiMsgNode);
+            
+            const responseTextSpan = aiBubbleStructure.querySelector(".response-content-target");
+            chatDisplayContainer.scrollTop = chatDisplayContainer.scrollHeight;
+
+            try {
+                // Déclenchement de la requête POST avec l'ID et l'invite
+                const serverConnection = await fetch(targetBackendEndpoint, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "text/event-stream"
+                    },
+                    body: JSON.stringify({
+                        conversation_id: selectedConversationId,
+                        message: promptMessage
+                    })
+                });
+
+                if (!serverConnection.ok) {
+                    throw new Error(`Réponse anormale du serveur HTTP : ${serverConnection.status}`);
+                }
+
+                statusLabel.innerHTML = `<i class="fa-solid fa-sync animate-spin text-emerald-400"></i> Réception SSE active`;
+                statusLabel.className = "bg-gray-900 border border-gray-900 rounded-lg px-3 py-1.5 text-xs text-emerald-400 font-medium flex items-center gap-2";
+
+                // Initialisation du décodage du flux binaire en mode continu (Chunk Reader)
+                const streamDataBuffer = serverConnection.body.getReader();
+                const textDecoderInstance = new TextDecoder("utf-8");
+                let ongoingStreamRetention = true;
+
+                while (ongoingStreamRetention) {
+                    const { done, value } = await streamDataBuffer.read();
+                    if (done) {
+                        ongoingStreamRetention = false;
+                        break;
+                    }
+
+                    // Décodage du bloc binaire textuel brut reçu
+                    const textualChunk = textDecoderInstance.decode(value, { stream: true });
+                    
+                    // Découpage et parsing des lignes SSE conformes au standard (data: {...})
+                    const operationalLines = textualChunk.split("\n");
+                    for (let unitLine of operationalLines) {
+                        unitLine = unitLine.trim();
+                        if (unitLine.startsWith("data:")) {
+                            const dataPayload = unitLine.substring(5).trim();
+                            if (dataPayload === "[DONE]") {
+                                ongoingStreamRetention = false;
+                            } else {
+                                try {
+                                    const parsedJsonPayload = JSON.parse(dataPayload);
+                                    // Extraction de la chaîne selon la topologie de votre JSON (ex: response, text ou delta)
+                                    const incrementalToken = parsedJsonPayload.text || parsedJsonPayload.response || parsedJsonPayload.choices?.[0]?.delta?.content || "";
+                                    responseTextSpan.textContent += incrementalToken;
+                                    chatDisplayContainer.scrollTop = chatDisplayContainer.scrollHeight;
+                                } catch (jsonError) {
+                                    // Rétrocompatibilité : Si ce n'est pas du JSON structuré, afficher la ligne brute
+                                    if (dataPayload) {
+                                        responseTextSpan.textContent += dataPayload + " ";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            } catch (runtimeNetworkError) {
+                console.error("Échec de l'aiguillage SSE :", runtimeNetworkError);
+                responseTextSpan.innerHTML = `<span class="text-red-400 font-medium"><i class="fa-solid fa-triangle-exclamation"></i> Une erreur de communication est survenue avec le serveur. Vérifiez la configuration CORS ou l'état de l'API.</span>`;
+            } finally {
+                // Rétablissement global de l'interface et fermeture de session d'écoute
+                responseTextSpan.classList.remove("streaming-text");
+                inputField.disabled = false;
+                submitBtn.disabled = false;
+                submitBtn.className = "bg-emerald-600 hover:bg-emerald-500 text-white p-2 rounded-lg transition-colors";
+                
+                statusLabel.innerHTML = `<i class="fa-solid fa-circle text-gray-600"></i> Flux terminé`;
+                statusLabel.className = "bg-gray-900 border border-gray-900 rounded-lg px-3 py-1.5 text-xs text-gray-500 font-medium flex items-center gap-2";
+            }
+        }
+
+        function clearChatLog() {
+            const chatDisplayContainer = document.getElementById("chatDisplayContainer");
+            chatDisplayContainer.innerHTML = `
+                <div class="flex items-start gap-3">
+                    <div class="bg-gray-900 border border-gray-800 text-gray-300 p-3 rounded-2xl rounded-tl-none max-w-xl">
+                        <p class="font-semibold text-emerald-400 mb-1 flex items-center gap-1">
+                            <i class="fa-solid fa-infinity text-[10px]"></i> Infinity Core
+                        </p>
+                        Mémoire de l'écran réinitialisée. Prêt pour un nouveau traitement synchrone.
+                    </div>
+                </div>`;
+        }
+    </script>
+</body>
+                          </html>
